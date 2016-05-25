@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="stylesheet/style.css">
+	<link rel="stylesheet" href="stylesheet/animate.css">
+	<meta charset="UTF-8">
+	<title>Dawn Balgobin - LCBO</title>
+</head>
+<body>
+	<header>
+	<div class="boxed">
+		<h3> What whiskey do I try?</h3>	
+	</div>
+	</header>
+	
+	<form action="">
+		<fieldset class="origin">
+			<h1>Origin?</h1>
+			<input type="radio" name="origin" id="ireland" value="ireland">
+			<label for="ireland">Ireland</label>
+			<input type="radio" name="origin" id="usa" value="usa">
+			<label for="usa">USA</label>
+		</fieldset>
+		
+		<fieldset class="style">
+			<h1>What's your flavour preference?</h1>
+			<input type="radio" name="flavour" id="bold and classic" value="bold & classic">
+			<label for="bold">Bold and Classic</label>
+			<input type="radio" name="flavour" id="medium and sweet" value="medium & sweet">
+			<label for="medium">Medium and Sweet</label>
+			<input type="radio" name="flavour" id="subtle and fruity" value="subtle & fruity">
+			<label for="fruity">Subtle and Fruity</label>
+			<input type="radio" name="flavour" id="subtle and spicy" value="subtle & spicy">
+			<label for="spicy">Subtle and Spicy</label>
+		</fieldset>
+
+		<fieldset class="price">
+			<h1>Cheap or expensive?</h1>
+			<input type="radio" name="amount" id="cheap" value="30">
+			<label for="cheap">Cheap</label>
+			<input type="radio" name="amount" id="Expensive" value="31">
+			<label for="expensive">Expensive</label>
+			<div class="submit-container">
+				<input type="submit" value="Get me drunk!">
+			</div>
+		</fieldset>	
+	</form>
+	
+	<div class="whiskey_result">
+	<h2></h2>
+	</div>
+	<footer>
+		<p>Site Designed by Dawn Balgobin</p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lcbo.js"></script>
+	
+</body>
+</html>
