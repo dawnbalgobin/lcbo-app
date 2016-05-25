@@ -7,12 +7,21 @@ var lcbo = {};
     		// calling the function below so the data from the api is being got
     		// lcbo.getData();
     	//Code to listen for form submit and getting values when user choice is made
-    	 $('form').on('submit', function(e) {
+    	 $('#oid').change(function(){
+       $('html, body').animate({ scrollTop: $('#sid').offset().top}, 1000);
+       })
+       $('#sid').change(function(){
+       $('html, body').animate({ scrollTop: $('#pid').offset().top}, 1000);
+       })
+      
+      
+       $('form').on('submit', function(e) {
     			e.preventDefault();
     			var originChoice = $('input[name=origin]:checked').val();
   				// console.log(originChoice); 
   				var styleChoice = $('input[name=flavour]:checked').val();
   				var priceChoice = $('input[name=amount]:checked').val();  
+
 
 				lcbo.getData(originChoice, styleChoice, priceChoice);
 				
@@ -107,9 +116,10 @@ var lcbo = {};
       var yourPrice = $('<h2>').text((randomWhiskey.price_in_cents/100).toFixed(2));
 
 
-    $('.whiskey_result').empty();
-    $('.whiskey_result').append(yourPhoto, yourResult, yourOrigin, yourPrice);
-
+    $('#whiskey_result').empty();
+    $('#whiskey_result').append(yourPhoto, yourResult, yourOrigin, yourPrice);
+    $('#whiskey_result').css("display", "block");
+    $('html, body').animate({ scrollTop: $('#whiskey_result').offset().top}, 1000);
 
     console.log(randomWhiskey);
 }
