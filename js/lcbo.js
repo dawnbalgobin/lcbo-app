@@ -8,12 +8,12 @@ var lcbo = {};
     		// lcbo.getData();
     	//Code to listen for form submit and getting values when user choice is made
     	 $('#oid').change(function(){
-       $('html, body').animate({ scrollTop: $('#sid').offset().top}, 1000);
+          $('html, body').animate({ scrollTop: $('#sid').offset().top}, 1000);
        })
        $('#sid').change(function(){
-       $('html, body').animate({ scrollTop: $('#pid').offset().top}, 1000);
+          $('html, body').animate({ scrollTop: $('#pid').offset().top}, 1000);
        })
-      
+        
       
        $('form').on('submit', function(e) {
     			e.preventDefault();
@@ -23,7 +23,7 @@ var lcbo = {};
   				var priceChoice = $('input[name=amount]:checked').val();  
 
 
-				lcbo.getData(originChoice, styleChoice, priceChoice);
+				  lcbo.getData(originChoice, styleChoice, priceChoice);
 				
     			});	
     		

@@ -90,7 +90,7 @@ h3{
 
 /*---------------------*/
 
-/*fieldset{
+fieldset{
     align-items: stretch;
     flex-grow: 1;
     flex-basis: auto;
@@ -119,12 +119,12 @@ input[type="radio"]{
   position: absolute;
 }
 
-input[type="radio"]:checked + label,{
+input[type="radio"]:checked + label{
   background: darkblue;
   color: white;
   box-shadow: 0 .1rem .45rem 0 rgba(0,0,0,1);
   animation: checked 200ms 1;
-}*/
+}
 
 /*@-webkit-keyframes checked {
   0% {
